@@ -1,0 +1,32 @@
+message = "\n你今年多少岁?(填0退出)"
+ask = ""
+question = "我可以询问你的年龄吗(填写yes或no)  Enter键确定"
+active = True
+while active:
+    answer = input(question)
+    if answer == 'no':
+        print('那好吧！谢谢')
+        active = False
+    elif answer == 'yes':
+        while True  :
+            ask = int(input(message))
+            if ask == 18 :
+                print('\t你刚好可以开车')
+                print('\n(填0退出)')
+            elif ask == 1000:
+                print('扯淡吧，你是千年老王八吗？')
+            elif ask == 0 :
+                break
+            elif ask >=60 :
+                print('你的年龄太大，不能开车')
+                continue
+            elif ask < 18 :
+                print('\t你还不能开车')
+            elif ask > 18 :
+                print('\t你早就可以开车了')
+
+
+
+
+
+
